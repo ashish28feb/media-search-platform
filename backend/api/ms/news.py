@@ -5,6 +5,8 @@ from dotenv import load_dotenv
 from trafilatura import fetch_url, extract
 from trafilatura.settings import use_config
 from trafilatura.meta import reset_caches
+import requests
+from bs4 import BeautifulSoup
 from dateutil.parser import parse
 from datetime import datetime, timedelta
 import re
