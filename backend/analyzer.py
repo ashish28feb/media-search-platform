@@ -22,7 +22,7 @@ async def analyze_article(entity_name: str, entity_description: str, article: di
     Supports multilingual input and returns summary in English.
     """
     content = article.get("content") or article.get("description") or ""
-    print(f"ANALYZER CALLED for: {entity_name} - {article.get("title", "No title")}")
+    print(f"ANALYZER CALLED for: {entity_name} - {article.get('title', 'No title')}")
     if not content.strip():
         return {
             "error": "Article content is empty.",
